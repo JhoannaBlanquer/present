@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Present! - App</title>
+    <link rel="stylesheet" href="classes.component.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav class="navbar">
+                <h1 class="app-name">Present!</h1>
+                <div class="icon-container">
+                    <i class="fas fa-bell notification-icon"></i>
+                    <div class="dropdown">
+                        <i class="fas fa-bars menu-icon"></i>
+                        <div class="dropdown-content">
+                            <a href="#">
+                                <i class="fas fa-cogs"></i> Manage Class
+                            </a>
+                            <a href="#">
+                                <i class="fas fa-plus-circle"></i> Create Class
+                            </a>
+                            <a href="#">
+                                <i class="fas fa-user-plus"></i> Join Class
+                            </a>
+                        </div> <!-- Close dropdown-content -->
+                    </div> <!-- Close dropdown -->
+                </div> <!-- Close icon-container -->
+            </nav>
+
+            <div class="profile-container">
+                <div class="profile-icon-wrapper">
+                    <i class="fa-solid fa-user profile-icon"></i>
+                </div>
+                <span class="username">Username</span>
+            </div>
+        </header>
+
+        <main>
+            <div class="search-container">
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                <input type="search" class="input-field search-input" placeholder="Search">
+            </div>
+
+            <!-- Classes Section -->
+            <div class="classes-text">
+                <h2>Classes</h2>
+            </div>
+
+            <!-- Teaching Section -->
+            <div class="teaching-section">
+                <div class="teaching-text">Teaching</div>
+                <a href="#" class="class-label-container">
+                    <div class="class-name">Class 1</div>
+                    <div class="section">Section</div>
+                </a>
+            </div>
+
+            <!-- Enrolled Section -->
+            <div class="enrolled-section">
+                <div class="enrolled-text">Enrolled</div>
+                <a href="#" class="class-label-container">
+                    <div class="class-name">Class 2</div>
+                    <div class="section">Section</div>
+                </a>
+                <a href="#" class="class-label-container">
+                    <div class="class-name">Class 3</div>
+                    <div class="section">Section</div>
+                </a>
+                <a href="#" class="class-label-container">
+                    <div class="class-name">Class 4</div>
+                    <div class="section">Section</div>
+                </a>
+                <a href="#" class="class-label-container">
+                    <div class="class-name">Class 5</div>
+                    <div class="section">Section</div>
+                </a>
+                <a href="#" class="class-label-container">
+                    <div class="class-name">Class 6</div>
+                    <div class="section">Section</div>
+                </a>
+                <a href="#" class="class-label-container">
+                    <div class="class-name">Class 7</div>
+                    <div class="section">Section</div>
+                </a>
+            </div>
+        </main>
+
+        <footer class="bottom-nav">
+            <a href="#" class="nav-item">
+                <i class="fas fa-home"></i>
+                <span>Home</span>
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fas fa-tasks"></i>
+                <span>Activities</span>
+            </a>
+            <a href="#" class="nav-item active">
+                <i class="fas fa-check-circle"></i>
+                <span>Check-In</span>
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fas fa-chalkboard"></i>
+                <span>Classes</span>
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fas fa-user"></i>
+                <span>Profile</span>
+            </a>
+        </footer>
+    </div>
+</body>
+</html>

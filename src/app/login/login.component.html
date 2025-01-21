@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Centered Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    /* Prevent scrollbar */
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+      font-family: 'Poppins', sans-serif; /* Default font */
+    }
+
+
+    /* Styling for clickable links */
+    .forgot-password, .register-link, .google-btn-content, .login-btn {
+      cursor: pointer;
+      color: #A06CD5;
+      text-decoration: none;
+    }
+
+
+    .forgot-password:hover, .register-link:hover {
+      text-decoration: underline;
+    }
+   
+    .google-btn {
+      cursor: pointer;
+    }
+
+
+    /* Additional styles for login button and other components can be customized as needed */
+  </style>
+</head>
+<body>
+
+
+  <div class="container">
+    <div class="welcome-text">
+      <span class="primary-text">Welcome! <br> You're just a click away from being</span>
+      <span class="highlight-text"><br> Present⏳</span>
+    </div>
+
+
+    <div class="sub-text">Hello there, login to continue</div>
+
+
+    <input type="email" class="input-field email-input" placeholder="Enter your email">
+    <input type="password" class="input-field password-input" placeholder="Enter your password">
+
+
+    <div class="forgot-password">Forgot Password?</div>
+
+
+    <a [routerLink]="['/home']" class="login-btn">Login</a>
+
+
+    <div class="social-separator-text">Or continue with social account</div>
+
+
+    <div class="social-separator left"></div>
+    <div class="social-separator right"></div>
+
+
+    <div class="google-btn">
+      <div class="google-btn-content">
+        <div class="google-icon">
+          <div class="google-icon-yellow"></div>
+          <div class="google-icon-blue"></div>
+          <div class="google-icon-green"></div>
+          <div class="google-icon-red"></div>
+        </div>
+        <div class="google-text">Google</div>
+      </div>
+    </div>
+
+
+    <div class="register-text">
+      <span>Didn’t have an account? </span>
+      <a class="register-link" href="/signup">Register</a>
+    </div>
+  </div>
+</body>
+</html>

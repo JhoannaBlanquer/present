@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Present! - Check-In</title>
+    <link rel="stylesheet" href="viewclassdedu.component.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+          <nav class="navbar">
+            <h1 class="app-name">Present!</h1>
+            <div class="icon-container">
+              <a href="#" class="notification-link">
+                <i class="fas fa-bell notification-icon"></i>
+              </a>
+              <!-- Menu Dropdown Added -->
+              <div class="dropdown">
+                <a href="#" class="menu-link">
+                  <i class="fas fa-bars menu-icon"></i>
+                </a>
+                <div class="dropdown-content">
+                    <a href="#">
+                        <i class="fas fa-cogs"></i> Manage Class
+                    </a>
+                    <a href="#">
+                        <i class="fas fa-plus-circle"></i> Create Class
+                    </a>
+                    <a href="#">
+                        <i class="fas fa-user-plus"></i> Join Class
+                    </a>
+                </div> <!-- Close dropdown-content -->
+              </div> <!-- Close dropdown -->
+            </div>
+          </nav>
+        </header>
+
+
+        <main>
+          <!-- Class 1 Container -->
+          <div class="class-container">
+            <h2 class="class-name">Class 1</h2>
+            <div class="time-info">
+              <div class="time-section">
+                <div>Start Time</div>
+                <div>Grace Period</div>
+              </div>
+              <div class="time-section">
+                <div>Late Threshold</div>
+                <div>Cutoff Time</div>
+              </div>
+            </div>
+            <button class="start-class-btn">START CLASS</button>
+          </div>
+
+
+          <!-- Attendance Section -->
+          <div class="attendance-container">
+            <div class="attendance-date">
+              <i class="fas fa-calendar-alt"></i>
+              <span class="date-text">January 7, 2025</span>
+            </div>
+
+
+            <div class="attendance-status">
+              <div class="status-option present">Present</div>
+              <div class="status-option absent">Absent</div>
+              <div class="status-option late">Late</div>
+              <div class="status-option excused">Excused</div>
+            </div>
+
+
+            <div class="attendance-list">
+              <ul>
+                <li>John Doe - Present</li>
+                <li>Jane Smith - Late</li>
+                <li>Mike Ross - Absent</li>
+                <!-- More names as per database -->
+              </ul>
+            </div>
+          </div>
+        </main>
+
+
+        <footer class="bottom-nav">
+            <a href="#" class="nav-item">
+                <i class="fas fa-home"></i>
+                <span>Home</span>
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fas fa-tasks"></i>
+                <span>Activities</span>
+            </a>
+            <a href="#" class="nav-item active">
+                <i class="fas fa-check-circle"></i>
+                <span>Check-In</span>
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fas fa-chalkboard"></i>
+                <span>Classes</span>
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fas fa-user"></i>
+                <span>Profile</span>
+            </a>
+        </footer>
+    </div>
+</body>
+</html>

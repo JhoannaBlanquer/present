@@ -1,0 +1,262 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Container styles */
+.container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: #061A29; /* Dark background color for the container */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-bottom: 60px; /* Space for footer */
+}
+
+
+/* Navbar */
+.navbar {
+    background-color: #220540; /* Dark purple */
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+
+/* App Name */
+.app-name {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+
+/* Icon Container */
+.icon-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* Notification and Menu Icons */
+.notification-icon,
+.menu-icon {
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-left: 10px;
+    color: #ffffff;
+}
+
+/* Dropdown Menu */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0; /* Align dropdown to the right of the menu icon */
+    background-color: #220540;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    margin-top: 10px; /* Space between the menu and dropdown */
+    border-radius: 5px; /* Slightly rounded corners for dropdown */
+}
+
+/* Dropdown links */
+.dropdown-content a {
+    color: white;
+    padding: 16px 20px; /* Increased padding for easier clickability */
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between icon and text */
+    transition: background-color 0.3s ease; /* Smooth background change on hover */
+}
+
+.dropdown-content a:hover {
+    background-color: #575757; /* Darker background on hover */
+    border-radius: 5px; /* Rounded corners for hover effect */
+}
+
+/* Show dropdown when menu icon is clicked */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Class Overview Section */
+.class-overview {
+    margin-top: 30px;
+    background-color: #102B3F;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.overview-title {
+    font-size: 1.5rem;
+    color: #ffffff; /* Purple */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+.overview-stats {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+
+.stat-box {
+    background-color: #220540;
+    color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    width: 22%;
+    text-align: center;
+}
+
+
+.stat-box .stat-label {
+    font-size: 1rem;
+}
+
+
+.stat-box .stat-number {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+/* Data and Status Table */
+.data-status-table-container {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #102B3F; /* Dark background */
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.data-status-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+
+.data-status-table th,
+.data-status-table td {
+    padding: 15px;
+    text-align: center;
+    font-size: 1.1rem;
+    color: #ffffff; /* Purple color for text */
+}
+
+
+.data-status-table th {
+    background-color: #220540;
+    font-weight: bold;
+}
+
+
+.data-status-table td {
+    background-color: #061A29;
+    border-top: 1px solid #333;
+}
+
+
+.data-status-table tr:nth-child(odd) td {
+    background-color: #102B3F; /* Lighter background for odd rows */
+}
+
+
+.data-status-table td:hover {
+    background-color: #A06CD5; /* Highlight on hover */
+    color: #fff; /* Change text color on hover */
+}
+
+
+.data-status-table .status-present {
+    color: #32CD32; /* Green for Present */
+    font-weight: bold;
+}
+
+
+.data-status-table .status-absent {
+    color: #FF6347; /* Red for Absent */
+    font-weight: bold;
+}
+
+
+.data-status-table .status-late {
+    color: #FF9800; /* Orange for Late */
+    font-weight: bold;
+}
+
+
+.data-status-table .status-excused {
+    color: #00BFFF; /* Blue for Excused */
+    font-weight: bold;
+}
+
+
+/* Bottom Navigation Bar */
+.bottom-nav {
+    background-color: #220540;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+.nav-item {
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9rem;
+    flex: 1;
+}
+
+
+.nav-item i {
+    font-size: 1.5rem;
+    display: block;
+    margin-bottom: 5px;
+}
+
+
+.nav-item.active {
+    color: #6200ea;
+}
+
+
+.nav-item.active i {
+    color: #ae75ff;
+}

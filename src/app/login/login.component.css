@@ -1,0 +1,279 @@
+ /* Container styles */
+ .container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: #061A29;
+  }
+  
+  
+  /* Title and welcome text */
+  .welcome-text {
+    width: fit-content;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    white-space: nowrap;
+  }
+  
+  
+  .welcome-text span {
+    font-size: 32px;
+    line-height: 41.36px;
+  }
+  
+  
+  .welcome-text .primary-text {
+    color: white;
+    font-weight: 400;
+  }
+  
+  
+  .welcome-text .highlight-text {
+    color: #A06CD5;
+    font-weight: 600;
+  }
+  
+  
+  /* Sub-text */
+  .sub-text {
+    width: 309px;
+    height: 23px;
+    position: absolute;
+    top: 250px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20.68px;
+    text-align: center;
+  }
+  
+  
+  /* Input fields */
+  .input-field {
+    width: 354px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 40px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 13px;
+    border: 1.5px solid #A06CD5;
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20.68px;
+  }
+  
+  
+  .email-input {
+    top: 290px;
+  }
+  
+  
+  .password-input {
+    top: 350px;
+  }
+  
+  
+  /* Forgot password text */
+  .forgot-password {
+    position: absolute;
+    left: 56%;
+    top: 410px;
+    color: #A06CD5;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15.51px;
+  }
+  
+  
+  /* Login button */
+  .login-btn {
+    width: 370px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    position: absolute;
+    top: 460px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white !important; 
+    background: #A06CD5; 
+    border-radius: 13px;
+    border: none;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25.85px;
+    cursor: pointer;
+    text-align: center;
+    display: inline-flex; 
+    justify-content: center;
+    align-items: center; 
+    white-space: nowrap; 
+  }
+  
+  
+  .login-btn:hover {
+    color: #A06CD5;
+  }
+  
+  
+  .login-btn:active {
+    background: #7B4DB6; 
+  }
+  
+  /* Social login separator text */
+  .social-separator-text {
+    width: 309px;
+    height: 23px;
+    position: absolute;
+    top: 550px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white;    
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20.68px;
+  }
+  
+  
+  /* Social login horizontal separators */
+  .social-separator {
+    width: 36px;
+    height: 0px;
+    position: absolute;
+    top: 560px;
+    border: 1px rgba(226, 207, 234, 0.50) solid;
+  }
+  
+  
+  .social-separator.left {
+    left: 50%;
+    transform: translateX(-180px);
+  }
+  
+  
+  .social-separator.right {
+    left: 50%;
+    transform: translateX(140px);
+  }
+  
+  
+  /* Google social button */
+  .google-btn {
+    width: 300px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    position: absolute;
+    top: 600px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 13px;
+    overflow: hidden;
+    border: 1.5px #A06CD5 solid;
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+    padding-right: 5%;
+  }
+  
+  
+  /* Align the content inside the button */
+  .google-btn-content {
+    display: flex;
+    align-items: center; 
+    gap: 6px;            
+    justify-content: center;  
+    width: 100%;          
+  }
+  
+  
+  /* Google icon styling */
+  .google-icon {
+    width: 24px;
+    height: 24px;
+    position: relative;
+  }
+  
+  
+  .google-icon div {
+    position: absolute;
+  }
+  
+  
+  .google-icon .google-icon-yellow {
+    width: 3.99px;
+    height: 8.40px;
+    left: 3px;
+    top: 7.86px;
+    background: #FBBB00;
+  }
+  
+  
+  .google-icon .google-icon-blue {
+    width: 8.80px;
+    height: 8.70px;
+    left: 12.20px;
+    top: 10.32px;
+    background: #518EF8;
+  }
+  
+  
+  .google-icon .google-icon-green {
+    width: 13.56px;
+    height: 7.12px;
+    left: 4.07px;
+    top: 13.88px;
+    background: #28B446;
+  }
+  
+  
+  .google-icon .google-icon-red {
+    width: 13.74px;
+    height: 7.26px;
+    left: 4.01px;
+    top: 3px;
+    background: #F14336;
+  }
+  
+  
+  /* Google text styling */
+  .google-btn-content .google-text {
+    text-align: center;
+    color: #E2CFEA;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25.85px;
+    word-wrap: break-word;
+  }
+
+  /* Registration text */
+  .register-text {
+    width: 309px;
+    height: 23px;
+    position: absolute;
+    top: 670px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white;
+  }
+  
+  .register-text span {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20.68px;
+  }
+  
+  
+  .register-text .register-link {
+    color: #A06CD5;
+  }
+  
