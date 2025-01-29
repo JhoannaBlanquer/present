@@ -10,6 +10,8 @@ import { ViewclassstComponent } from './viewclassst/viewclassst.component';
 import { ViewclassenrolledComponent } from './viewclassenrolled/viewclassenrolled.component';
 import { CheckinnotComponent } from './checkinnot/checkinnot.component';
 import { LoginComponent } from './login/login.component';
+import { AngularFireModule } from '@angular/fire/compat'
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,8 @@ import { LoginComponent } from './login/login.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AngularFireModule.initializeApp(environment.firebase)
   ],
   providers: [],
   bootstrap: [AppComponent]
