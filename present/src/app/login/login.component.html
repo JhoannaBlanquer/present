@@ -49,14 +49,14 @@
     <div class="sub-text">Hello there, login to continue</div>
 
 
-    <input type="email" class="input-field email-input" placeholder="Enter your email">
-    <input type="password" class="input-field password-input" placeholder="Enter your password">
+    <input type="email" class="input-field email-input" placeholder="Enter your email"name="email" [(ngModel)]="email">
+    <input type="password" class="input-field password-input" placeholder="Enter your password" name="password" [(ngModel)]="password">
 
 
     <div class="forgot-password">Forgot Password?</div>
 
-
-    <a [routerLink]="['/home']" class="login-btn">Login</a>
+    <button type="button" class="login-btn" (click)="login()">Login</button>
+  <!--   <a [routerLink]="['/home']" class="login-btn">Login</a> -->
 
 
     <div class="social-separator-text">Or continue with social account</div>

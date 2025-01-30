@@ -9,12 +9,13 @@
   
     <input type="fn" class="input-field fn-input" placeholder="First Name">
     <input type="ln" class="input-field ln-input" placeholder="Last Name">
-    <input type="email" class="input-field email-input" placeholder="Email Address">
-    <input type="pass" class="input-field pass-input" placeholder="Password">
+    <input type="email" class="input-field email-input" placeholder="Email Address" [(ngModel)]="email">
+    <input type="password" class="input-field pass-input" placeholder="Password" [(ngModel)]="password">
     <input type="confirm" class="input-field confirm-input" placeholder="Confirm Password">
   
   
-    <a [routerLink]="['/home']" class="register-btn">Register</a>
+    <button type="button" class="login-btn" (click)="register()">Sign Up</button>
+    <!-- <a [routerLink]="['/home']" class="register-btn">Register</a> -->
   
   
     <div class="social-separator-text">Or continue with social account</div>
