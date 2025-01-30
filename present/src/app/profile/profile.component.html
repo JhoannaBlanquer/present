@@ -26,10 +26,10 @@
                     <a href="#">
                         <i class="fas fa-cogs"></i> Manage Class
                     </a>
-                    <a [routerLink="/createclass">
+                    <a [routerLink]="['/createclass']">
                         <i class="fas fa-plus-circle"></i> Create Class
                     </a>
-                    <a routerLink="/joinclass">
+                    <a [routerLink]="['/joinclass']">
                         <i class="fas fa-user-plus"></i> Join Class
                     </a>
                 </div>
@@ -49,28 +49,28 @@
                 <p>Thank you for choosing Present! <br> See you next time.</p>
             </div>
             <!-- Added the logout button after the message -->
-            <button class="logout-button"routerLink="/login" >Logout</button>
+            <button class="logout-button"[routerLink]="['/login']" >Logout</button>
         </main>
 
 
         <footer class="bottom-nav">
-            <a routerLink="/home" class="nav-item">
+            <a [routerLink]="['/home']" class="nav-item">
                   <i class="fas fa-home"></i>
                   <span>Home</span>
               </a>
-              <a routerLink="/activity" class="nav-item activities">
+              <a [routerLink]="['/activity']" class="nav-item activities">
                   <i class="fas fa-tasks"></i>
                   <span>Activities</span>
               </a>
-              <a routerLink="/checkinconnect" class="nav-item">
+              <a [routerLink]="['/checkinconnect']" class="nav-item">
                   <i class="fas fa-check-circle"></i>
                   <span>Check-In</span>
               </a>
-              <a routerLink="/classes" class="nav-item active">
+              <a [routerLink]="['/classes']" class="nav-item">
                   <i class="fas fa-chalkboard"></i>
                   <span>Classes</span>
               </a>
-              <a routerLink="/profile" class="nav-item">
+              <a [routerLink]="['/profile']" class="nav-item active">
                   <i class="fas fa-user"></i>
                   <span>Profile</span>
               </a>

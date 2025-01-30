@@ -26,12 +26,12 @@
               <a href="#">
                   <i class="fas fa-cogs"></i> Manage Class
               </a>
-              <a routerLink="/createclass">
-                <i class="fas fa-plus-circle"></i> Create Class
-            </a>
-            <a routerLink="/joinclass">
-                <i class="fas fa-user-plus"></i> Join Class
-            </a>
+              <a [routerLink]="['/createclass']">
+                  <i class="fas fa-plus-circle"></i> Create Class
+              </a>
+              <a [routerLink]="['/joinclass']">
+                  <i class="fas fa-user-plus"></i> Join Class
+              </a>
           </div>
       </div>
   </div>
@@ -56,7 +56,7 @@
                       <input type="time" id="cutoff-time" name="cutoff-time">
                   </div>
               </div>
-              <button class="start-class-btn" routerLink="/viewclassst">START CLASS</button>
+              <button class="start-class-btn" [routerLink]="['/viewclassst']">START CLASS</button>
           </div>
 
           <!-- Attendance Section -->
@@ -94,27 +94,27 @@
 
 
         <footer class="bottom-nav">
-            <a routerLink="/home" class="nav-item">
-                  <i class="fas fa-home"></i>
-                  <span>Home</span>
-              </a>
-              <a routerLink="/activity" class="nav-item activities">
-                  <i class="fas fa-tasks"></i>
-                  <span>Activities</span>
-              </a>
-              <a routerLink="/checkinconnect" class="nav-item">
-                  <i class="fas fa-check-circle"></i>
-                  <span>Check-In</span>
-              </a>
-              <a routerLink="/classes" class="nav-item active">
-                  <i class="fas fa-chalkboard"></i>
-                  <span>Classes</span>
-              </a>
-              <a routerLink="/profile" class="nav-item">
-                  <i class="fas fa-user"></i>
-                  <span>Profile</span>
-              </a>
-          </footer>
+          <a [routerLink]="['/home']" class="nav-item">
+                <i class="fas fa-home"></i>
+                <span>Home</span>
+            </a>
+            <a [routerLink]="['/activity']" class="nav-item activities">
+                <i class="fas fa-tasks"></i>
+                <span>Activities</span>
+            </a>
+            <a [routerLink]="['/checkinconnect']" class="nav-item">
+                <i class="fas fa-check-circle"></i>
+                <span>Check-In</span>
+            </a>
+            <a [routerLink]="['/classes']" class="nav-item active">
+                <i class="fas fa-chalkboard"></i>
+                <span>Classes</span>
+            </a>
+            <a [routerLink]="['/profile']" class="nav-item">
+                <i class="fas fa-user"></i>
+                <span>Profile</span>
+            </a>
+        </footer>
     </div>
 </body>
 </html>

@@ -23,12 +23,8 @@
                         </div>
                         <div class="dropdown-content">
                             <a href="#"><i class="fas fa-cogs"></i> Manage Class</a>
-                            <a [routerLink="/createclass">
-                                <i class="fas fa-plus-circle"></i> Create Class
-                            </a>
-                            <a routerLink="/joinclass">
-                                <i class="fas fa-user-plus"></i> Join Class
-                            </a>
+                            <a [routerLink]="['/createclass']"><i class="fas fa-plus-circle"></i> Create Class</a>
+                            <a [routerLink]="['/joinclass']"><i class="fas fa-user-plus"></i> Join Class</a>
                         </div>
                     </div>                        
         </div>
@@ -53,23 +49,23 @@
 
 
         <footer class="bottom-nav">
-            <a routerLink="/home" class="nav-item">
+            <a [routerLink]="['/home']" class="nav-item">
                   <i class="fas fa-home"></i>
                   <span>Home</span>
               </a>
-              <a routerLink="/activity" class="nav-item activities">
+              <a [routerLink]="['/activity']" class="nav-item activities">
                   <i class="fas fa-tasks"></i>
                   <span>Activities</span>
               </a>
-              <a routerLink="/checkinconnect" class="nav-item">
+              <a [routerLink]="['/checkinnot']" class="nav-item active">
                   <i class="fas fa-check-circle"></i>
                   <span>Check-In</span>
               </a>
-              <a routerLink="/classes" class="nav-item active">
+              <a [routerLink]="['/classes']" class="nav-item">
                   <i class="fas fa-chalkboard"></i>
                   <span>Classes</span>
               </a>
-              <a routerLink="/profile" class="nav-item">
+              <a [routerLink]="['/profile']" class="nav-item">
                   <i class="fas fa-user"></i>
                   <span>Profile</span>
               </a>
