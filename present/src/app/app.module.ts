@@ -23,6 +23,7 @@ import { getFirestore, provideFirestore } from '@angular/fire/firestore';
 import { getDatabase, provideDatabase } from '@angular/fire/database';
 import { AngularFireModule } from '@angular/fire/compat';
 import { environment } from '../environments/environment';
+import { FormsModule } from '@angular/forms'
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import { environment } from '../environments/environment';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    AngularFireModule.initializeApp(environment.firebase)
+    AngularFireModule.initializeApp(environment.firebase),
+    FormsModule
   ],
   providers: [
     provideFirebaseApp(() => initializeApp({ projectId: "present--2025", appId: "1:412519081422:web:46ec2817ce48898a45379f", storageBucket: "present--2025.firebasestorage.app", apiKey: "AIzaSyAquqoXGmYm87ZOyjcmfvADn8hwxi7GkTo", authDomain: "present--2025.firebaseapp.com", messagingSenderId: "412519081422", measurementId: "G-CL2WEB0GMX" })),

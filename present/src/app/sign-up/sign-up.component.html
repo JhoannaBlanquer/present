@@ -7,14 +7,14 @@
     <div class="sub-text">Hello there, register to continue</div>
   
   
-    <input type="fn" class="input-field fn-input" placeholder="First Name">
-    <input type="ln" class="input-field ln-input" placeholder="Last Name">
-    <input type="email" class="input-field email-input" placeholder="Email Address">
-    <input type="pass" class="input-field pass-input" placeholder="Password">
-    <input type="confirm" class="input-field confirm-input" placeholder="Confirm Password">
+    <input type="fn" class="input-field fn-input" placeholder="First Name"[(ngModel)]="firstname">
+    <input type="ln" class="input-field ln-input" placeholder="Last Name" [(ngModel)]="lastname" >
+    <input type="email" class="input-field email-input" placeholder="Email Address" name="email" [(ngModel)]="email">
+    <input type="pass" class="input-field pass-input" placeholder="Password" name="email" [(ngModel)]="password">
+    <input type="confirm" class="input-field confirm-input" placeholder="Confirm Password"[(ngModel)]="cpassword">
   
-  
-    <a [routerLink]="['/home']" class="register-btn">Register</a>
+    <button type="button" class="register-btn" (click)="register()">Register</button>
+    <!-- <a [routerLink]="['/home']" class="register-btn" (click)="register()">Register</a> -->
   
   
     <div class="social-separator-text">Or continue with social account</div>
