@@ -25,29 +25,30 @@
     </div>
 
 
-    <input type="class" class="input-field class-input" placeholder="Class name (required)">
-    <input type="section" class="input-field section-input" placeholder="Section">
-    <input type="subject" class="input-field subject-input" placeholder="Subject">
-    <input type="room" class="input-field room-input" placeholder="Room">
-    <input type="schedule" class="input-field schedule-input" placeholder="Schedule">
+    <input type="class" class="input-field class-input" placeholder="Class name (required)" name="className" [(ngModel)]="className">
+    <input type="section" class="input-field section-input" placeholder="Section"name="section" [(ngModel)]="section">
+    <input type="subject" class="input-field subject-input" placeholder="Subject"name="subject"[(ngModel)]="subject" >
+    <input type="room" class="input-field room-input" placeholder="Room"name="room">
+    <input type="schedule" class="input-field schedule-input" placeholder="Schedule"name="schedule" [(ngModel)]="schedule">
 
 
     <div class="date-label">
       <!-- Start Date Label and Input -->
       <div class="date-field">
         <span class="date-label-text">Start Date</span>
-        <input type="date" class="input-field start-date-input" id="start-date">
+        <input type="date" class="input-field start-date-input" id="start-date" name="DayS"[(ngModel)]="dayS">
       </div>
    
       <!-- End Date Label and Input -->
       <div class="date-field">
         <span class="date-label-text">End Date</span>
-        <input type="date" class="input-field end-date-input" id="end-date">
+        <input type="date" class="input-field end-date-input" id="end-date" name="DayE" [(ngModel)]="dayE">
       </div>
     </div>
 
-
-    <a href="/createclass" class="create-btn">Create</a>
+<!-- 
+    <a href="/createclass" class="create-btn">Create</a> -->
+    <button type ="button" class="create-btn" (click)="addClass()">Create</button>
    
 
   </div>

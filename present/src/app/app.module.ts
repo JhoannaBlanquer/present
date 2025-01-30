@@ -13,7 +13,6 @@ import { LoginComponent } from './login/login.component';
 import { ProfileComponent } from './profile/profile.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { ActivityComponent } from './activity/activity.component';
-import { CreateclassComponent } from './createclass/createclass.component';
 import { JoinclassComponent } from './joinclass/joinclass.component';
 import { CheckinconnectComponent } from './checkinconnect/checkinconnect.component';
 import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
@@ -24,6 +23,7 @@ import { getDatabase, provideDatabase } from '@angular/fire/database';
 import { AngularFireModule } from '@angular/fire/compat';
 import { environment } from '../environments/environment';
 import { FormsModule } from '@angular/forms'
+import { CreateClassComponent } from './createclass/createclass.component';
 
 @NgModule({
   declarations: [
@@ -39,13 +39,14 @@ import { FormsModule } from '@angular/forms'
     ProfileComponent,
     SignUpComponent,
     ActivityComponent,
-    CreateclassComponent,
     JoinclassComponent,
     CheckinconnectComponent,
+       
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    CreateClassComponent, 
     AngularFireModule.initializeApp(environment.firebase),
     FormsModule
   ],
