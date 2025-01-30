@@ -16,6 +16,13 @@ import { ActivityComponent } from './activity/activity.component';
 import { CreateclassComponent } from './createclass/createclass.component';
 import { JoinclassComponent } from './joinclass/joinclass.component';
 import { CheckinconnectComponent } from './checkinconnect/checkinconnect.component';
+import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
+import { getAuth, provideAuth } from '@angular/fire/auth';
+import { getAnalytics, provideAnalytics, ScreenTrackingService, UserTrackingService } from '@angular/fire/analytics';
+import { getFirestore, provideFirestore } from '@angular/fire/firestore';
+import { getDatabase, provideDatabase } from '@angular/fire/database';
+import { AngularFireModule } from '@angular/fire/compat';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -37,9 +44,18 @@ import { CheckinconnectComponent } from './checkinconnect/checkinconnect.compone
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AngularFireModule.initializeApp(environment.firebase)
   ],
-  providers: [],
+  providers: [
+    provideFirebaseApp(() => initializeApp({ projectId: "present--2025", appId: "1:412519081422:web:46ec2817ce48898a45379f", storageBucket: "present--2025.firebasestorage.app", apiKey: "AIzaSyAquqoXGmYm87ZOyjcmfvADn8hwxi7GkTo", authDomain: "present--2025.firebaseapp.com", messagingSenderId: "412519081422", measurementId: "G-CL2WEB0GMX" })),
+    provideAuth(() => getAuth()),
+    provideAnalytics(() => getAnalytics()),
+    ScreenTrackingService,
+    UserTrackingService,
+    provideFirestore(() => getFirestore()),
+    provideDatabase(() => getDatabase())
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
